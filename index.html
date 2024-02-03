@@ -11,7 +11,6 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="//unpkg.com/alpinejs" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Custom+Font&display=swap">
 </head>
 
 <body class="flex flex-row bg-gray-discordlight text-gray-200">
@@ -24,18 +23,23 @@
             <i class="fa-solid fa-poo vnav-btn group"><span class="tooltip">It's tooltip 4!</span></i>
         </div>
         <!-- channel info -->
-        <div class="flex flex-col min-w-72 bg-gray-discorddark h-screen">
+        <div class="flex flex-col min-w-56 bg-gray-discorddark h-screen">
             <!-- server name and extras -->
-            <div class="flex w-full h-10 justify-between py-2 border-b-2 border-gray-discorddarker items-center">
-                <div><p class="ml-4 mt-1 font-mono text-sm">Channel Name</p></div>
+            <div
+                class="flex w-full h-10 justify-between py-2 border-b-2 border-gray-discorddarker items-center hover:bg-gray-discordlighter transition-all duration-100">
+                <div>
+                    <p class="ml-4 mt-1 font-mono text-sm cursor-default">Channel Name</p>
+                </div>
                 <div class="text-center mx-4"><i class="fa-solid fa-xmark"></i></div>
             </div>
             <!-- events and text/voice channels -->
             <div>
                 <!-- events -->
-                <div>
-                    <i class="fa-solid fa-calendar-day"></i>
+                <div class="flex mx-2 my-2 h-8 rounded-md hover:bg-gray-discordlighter transition-all duration-100">
+                    <i class="fa-solid fa-calendar-day w-8 text-center text-lg my-auto"></i>
+                    <p class="my-2 font-mono text-[13px] cursor-default">Events</p>
                 </div>
+                <hr class="ml-[4%] w-[92%] self-center border-gray-discordlight border-t-2">
                 <!-- channels -->
                 <div>
                     <!-- text channels -->
