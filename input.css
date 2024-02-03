@@ -10,11 +10,17 @@
     }
 
     .tooltip {
-        @apply absolute left-14 bottom-2 bg-gray-discorddarker w-auto min-w-max p-2 text-[10px] rounded-md text-gray-200 font-mono shadow-lg
+        @apply absolute left-14 top-[5px] bg-gray-discorddarker w-auto min-w-max p-2 text-xs rounded-md text-gray-200 font-mono shadow-lg
         transition-all duration-100 scale-0 origin-left group-hover:scale-100
     }
 
     .titlebar-icon {
-        @apply my-auto mx-2 text-lg
+        @apply relative my-auto mx-2 text-lg hover:text-gray-300
+        transition-all duration-100
+    }
+
+    .titlebar-tooltip {
+        @apply absolute top-6 translate-x-[-40%] bg-gray-discorddarker w-auto min-w-max p-2 text-xs rounded-md text-gray-200 font-mono shadow-lg
+        transition-all duration-100 scale-0 origin-top group-hover:scale-100
     }
 }
