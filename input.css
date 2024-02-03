@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .vnav-btn {
+        @apply relative mx-auto bg-gray-discorddark text-sm rounded-3xl h-10 w-10 text-center py-3 text-green-discordgreen
+        transition-all  hover:rounded-xl hover:bg-green-discordgreen hover:text-gray-200
+    }
+
+    .tooltip {
+        @apply absolute left-14 bottom-2 bg-gray-discorddarker w-auto min-w-max p-2 text-[10px] rounded-md text-gray-200 font-mono shadow-lg
+        transition-all duration-100 scale-0 origin-left group-hover:scale-100
+    }
+}
