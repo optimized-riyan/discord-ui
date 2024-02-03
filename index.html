@@ -14,7 +14,7 @@
 </head>
 
 <body class="flex flex-row bg-gray-discordlight text-gray-200">
-    <div class="flex fixed">
+    <div class="flex fixed w-lvw">
         <!-- left vertical nav bar -->
         <div class="flex flex-col w-14 bg-gray-discorddarker h-screen gap-2 py-2 z-10">
             <i class="fa-solid fa-plus vnav-btn group"><span class="tooltip">It's tooltip 1!</span></i>
@@ -22,20 +22,21 @@
             <i class="fa-solid fa-house vnav-btn group"><span class="tooltip">It's tooltip 3!</span></i>
             <i class="fa-solid fa-poo vnav-btn group"><span class="tooltip">It's tooltip 4!</span></i>
         </div>
-        <!-- channel info -->
+        <!-- server info -->
         <div class="flex flex-col min-w-56 bg-gray-discorddark h-screen">
             <!-- server name and extras -->
             <div
                 class="flex w-full h-10 justify-between py-2 border-b-2 border-gray-discorddarker items-center hover:bg-gray-discordlighter transition-all duration-100">
                 <div>
-                    <p class="ml-4 mt-1 font-mono text-sm cursor-default">Channel Name</p>
+                    <p class="ml-4 mt-1 font-mono text-sm cursor-default">Server Name</p>
                 </div>
-                <div class="text-center mx-4"><i class="fa-solid fa-xmark"></i></div>
+                <div class="text-center mx-4"><i class="fa-solid fa-angle-down"></i></div>
             </div>
             <!-- events and text/voice channels -->
             <div>
                 <!-- events -->
-                <div class="flex mx-2 my-2 h-8 rounded-md hover:bg-gray-discordlighter transition-all duration-100">
+                <div
+                    class="flex mx-2 my-2 h-8 rounded-md hover:bg-gray-discordlighter transition-all duration-100 text-gray-400">
                     <i class="fa-solid fa-calendar-day w-8 text-center text-lg my-auto"></i>
                     <p class="my-2 font-mono text-[13px] cursor-default">Events</p>
                 </div>
@@ -51,6 +52,27 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- top titlebar -->
+        <div class="flex justify-between h-10 border-b-2 border-gray-discorddarker w-full bg-gray-discordlight">
+            <!-- channel name -->
+            <div class="flex min-w-24">
+                <i class="fa-solid fa-hashtag my-auto mx-3 text-gray-400"></i>
+                <p class="font-mono text-[13px] mt-[11px]">Channel Name</p>
+            </div>
+            <!-- titlebar tools -->
+            <div class="flex text-gray-300">
+                <i class="fa-brands fa-threads titlebar-icon"></i>
+                <i class="fa-solid fa-bell titlebar-icon"></i>
+                <i class="fa-solid fa-thumbtack titlebar-icon"></i>
+                <i class="fa-solid fa-users titlebar-icon"></i>
+                <div class="relative my-auto">
+                    <input type="text" class="outline-none bg-gray-discorddarker rounded-md w-40 pl-2 py-[2px] focus:w-56 text-sm transition-all duration-200" placeholder="Search">
+                    <i class="absolute right-1 top-1 fa-solid fa-magnifying-glass text-sm mt-[2px] text-gray-400"></i>
+                </div>
+                <i class="fa-solid fa-inbox titlebar-icon"></i>
+                <i class="fa-solid fa-circle-question titlebar-icon"></i>
             </div>
         </div>
     </div>
