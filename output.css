@@ -763,6 +763,18 @@ video {
   margin-top: auto;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -785,6 +797,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .max-h-full {
@@ -837,6 +853,10 @@ video {
 
 .w-lvw {
   width: 100lvw;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .min-w-24 {
@@ -1112,6 +1132,26 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-gray-discordlight {
+  --tw-text-opacity: 1;
+  color: rgb(54 57 62 / var(--tw-text-opacity));
+}
+
+.text-gray-discordlighter {
+  --tw-text-opacity: 1;
+  color: rgb(66 69 73 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1131,9 +1171,22 @@ video {
   transition-duration: 200ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
+}
+
 .hover\:bg-gray-discordlighter:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(66 69 73 / var(--tw-bg-opacity));
+}
+
+.hover\:text-gray-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .focus\:w-56:focus {

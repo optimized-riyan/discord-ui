@@ -4,5 +4,8 @@
   },
   "scripts": {
     "dev": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "dependencies": {
+    "simplebar": "^6.2.5"
   }
 }
