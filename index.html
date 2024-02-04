@@ -14,7 +14,7 @@
 </head>
 
 <body class="flex flex-row bg-gray-discordlight text-gray-200">
-    <div class="flex w-lvw">
+    <div class="flex">
         <!-- left vertical nav bar -->
         <div class="flex flex-col w-14 bg-gray-discorddarker h-screen gap-2 py-2 z-10">
             <i class="fa-solid fa-plus vnav-btn group"><span class="tooltip">It's tooltip 1!</span></i>
@@ -55,9 +55,9 @@
             </div>
         </div>
         <!-- main content section -->
-        <div class="flex flex-col w-full">
+        <div class="flex flex-col w-full max-h-screen">
             <!-- top titlebar -->
-            <div class="flex justify-between h-10 border-b-2 border-gray-discorddarker bg-gray-discordlight">
+            <div class="flex justify-between shrink-0 h-10 border-b-2 border-gray-discorddarker bg-gray-discordlight">
                 <!-- channel name -->
                 <div class="flex min-w-24">
                     <i class="fa-solid fa-hashtag my-auto mx-3 text-gray-400"></i>
@@ -93,14 +93,13 @@
                 </div>
             </div>
             <!-- chats and textbar -->
-            <div class="flex flex-col h-full">
+            <div class="flex flex-col justify-end grow">
                 <!-- chats -->
-                <div class="flex flex-col grow justify-end overflow-auto pr-8">
+                <div class="flex flex-col grow justify-end pr-8 overflow-auto">
                     <!-- one single chat -->
                     <div class="flex font-mono my-3">
                         <!-- image -->
-                        <div class="w-9 h-9 bg-cover rounded-3xl mx-4"
-                            style="background-image: url('images/cat4.png');">
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1" style="background-image: url('images/cat4.png');">
                         </div>
                         <!-- text -->
                         <div class="grow my-auto">
@@ -117,7 +116,7 @@
                         </div>
                     </div>
                     <div class="flex font-mono my-3">
-                        <div class="w-9 h-9 bg-cover rounded-3xl mx-4"
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1"
                             style="background-image: url('images/cat4.png');">
                         </div>
                         <div class="grow my-auto">
@@ -131,31 +130,7 @@
                         </div>
                     </div>
                     <div class="flex font-mono my-3">
-                        <div class="w-9 h-9 bg-cover rounded-3xl mx-4"
-                            style="background-image: url('images/cat4.png');">
-                        </div>
-                        <div class="grow my-auto">
-                            <div>
-                                <span class="text-[12px] font-semibold"> Kitty </span>
-                                <span class="text-[10px] text-gray-400"> 8:00 AM Sunday Morning </span>
-                            </div>
-                            <div class="text-xs">
-                                Here kitty you can has cheezeburger
-                                Here kitty you can has cheezeburger
-                                Here kitty you can has cheezeburger
-                                Here kitty you can has cheezeburger
-                                Here kitty you can has cheezeburger
-                                Here kitty you can has cheezeburger
-                                Here kitty you can has cheezeburger
-                                Here kitty you can has cheezeburger
-                                Here kitty you can has cheezeburger
-                                Here kitty you can has cheezeburger
-                                Here kitty you can has cheezeburger
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex font-mono my-3">
-                        <div class="w-9 h-9 bg-cover rounded-3xl mx-4"
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1"
                             style="background-image: url('images/cat4.png');">
                         </div>
                         <div class="grow my-auto">
@@ -170,11 +145,35 @@
                                 Here kitty you can has cheezeburger
                                 Here kitty you can has cheezeburger
                                 Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
                             </div>
                         </div>
                     </div>
                     <div class="flex font-mono my-3">
-                        <div class="w-9 h-9 bg-cover rounded-3xl mx-4"
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1"
+                            style="background-image: url('images/cat4.png');">
+                        </div>
+                        <div class="grow my-auto">
+                            <div>
+                                <span class="text-[12px] font-semibold"> Kitty </span>
+                                <span class="text-[10px] text-gray-400"> 8:00 AM Sunday Morning </span>
+                            </div>
+                            <div class="text-xs">
+                                Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex font-mono my-3">
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1"
                             style="background-image: url('images/cat4.png');">
                         </div>
                         <div class="grow my-auto">
@@ -188,7 +187,35 @@
                         </div>
                     </div>
                     <div class="flex font-mono my-3">
-                        <div class="w-9 h-9 bg-cover rounded-3xl mx-4"
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1" style="background-image: url('images/cat4.png');">
+                        </div>
+                        <div class="grow my-auto">
+                            <div>
+                                <span class="text-[12px] font-semibold"> Kitty </span>
+                                <span class="text-[10px] text-gray-400"> 8:00 AM Sunday Morning </span>
+                            </div>
+                            <div class="text-xs">
+                                Here kitty you can has cheezeburger
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex font-mono my-3">
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1" style="background-image: url('images/cat4.png');">
+                        </div>
+                        <div class="grow my-auto">
+                            <div>
+                                <span class="text-[12px] font-semibold"> Kitty </span>
+                                <span class="text-[10px] text-gray-400"> 8:00 AM Sunday Morning </span>
+                            </div>
+                            <div class="text-xs">
+                                Here kitty you can has cheezeburger Here kitty you can has cheezeburger Here kitty you
+                                can has cheezeburger Here kitty you can has cheezeburger Here kitty you can has
+                                cheezeburger
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex font-mono my-3">
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1"
                             style="background-image: url('images/cat4.png');">
                         </div>
                         <div class="grow my-auto">
@@ -202,7 +229,7 @@
                         </div>
                     </div>
                     <div class="flex font-mono my-3">
-                        <div class="w-9 h-9 bg-cover rounded-3xl mx-4"
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1"
                             style="background-image: url('images/cat4.png');">
                         </div>
                         <div class="grow my-auto">
@@ -211,12 +238,26 @@
                                 <span class="text-[10px] text-gray-400"> 8:00 AM Sunday Morning </span>
                             </div>
                             <div class="text-xs">
-                                Here kitty you can has cheezeburger Here kitty you can has cheezeburger Here kitty you can has cheezeburger Here kitty you can has cheezeburger Here kitty you can has cheezeburger
+                                Here kitty you can has cheezeburger
                             </div>
                         </div>
                     </div>
                     <div class="flex font-mono my-3">
-                        <div class="w-9 h-9 bg-cover rounded-3xl mx-4"
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1"
+                            style="background-image: url('images/cat4.png');">
+                        </div>
+                        <div class="grow my-auto">
+                            <div>
+                                <span class="text-[12px] font-semibold"> Kitty </span>
+                                <span class="text-[10px] text-gray-400"> 8:00 AM Sunday Morning </span>
+                            </div>
+                            <div class="text-xs">
+                                Here kitty you can has cheezeburger
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex font-mono my-3">
+                        <div class="w-9 h-9 shrink-0 bg-cover rounded-3xl mx-4 mt-1"
                             style="background-image: url('images/cat4.png');">
                         </div>
                         <div class="grow my-auto">
@@ -231,8 +272,9 @@
                     </div>
                 </div>
                 <!-- text bar -->
-                <div class="relative mx-4 mb-4">
-                    <input type="text" class="outline-none bg-gray-discordlighter w-full h-9 rounded-lg pl-10 pr-28 text-sm font-mono">
+                <div class="relative mx-4 mb-4 shrink-0 h-9">
+                    <input type="text"
+                        class="outline-none bg-gray-discordlighter w-full h-full rounded-lg pl-10 pr-28 text-sm font-mono">
                     <!-- left plus icon -->
                     <div class="absolute top-1 left-3 text-gray-400 text-xl">
                         <i class="fa-solid fa-circle-plus"></i>
