@@ -17,11 +17,11 @@
 <body class="flex flex-row bg-gray-discordlight text-gray-200">
     <div class="flex">
         <!-- left vertical nav bar -->
-        <div class="flex flex-col w-16 bg-gray-discorddarker h-screen gap-2 py-2 z-10">
-            <i class="fa-solid fa-plus vnav-btn group"><span class="tooltip">It's tooltip 1!</span></i>
-            <i class="fa-solid fa-bolt vnav-btn group"><span class="tooltip">It's tooltip 2!</span></i>
-            <i class="fa-solid fa-house vnav-btn group"><span class="tooltip">It's tooltip 3!</span></i>
-            <i class="fa-solid fa-poo vnav-btn group"><span class="tooltip">It's tooltip 4!</span></i>
+        <div class="flex flex-col w-16 bg-gray-discorddarker h-screen gap-2 py-2">
+            <i class="fa-solid fa-plus vnav-btn group"><span class="tooltip">Add......something??</span></i>
+            <i class="fa-solid fa-bolt vnav-btn group"><span class="tooltip">Unlimited Powerrrrrrrr!</span></i>
+            <i class="fa-solid fa-house vnav-btn group"><span class="tooltip">Grove Street, home.</span></i>
+            <i class="fa-solid fa-poo vnav-btn group"><span class="tooltip">Why is there doodoo in my ui?</span></i>
         </div>
         <!-- server info -->
         <div class="flex flex-col min-w-56 bg-gray-discorddark h-screen">
@@ -35,45 +35,63 @@
             </div>
             <!-- events -->
             <div>
-                <!-- events -->
                 <div
                     class="flex mx-2 my-2 h-8 rounded-md hover:bg-gray-discordlighter transition-all duration-100 text-gray-400">
                     <i class="fa-solid fa-calendar-day w-8 text-center text-lg my-auto"></i>
                     <p class="my-2 font-mono text-[13px] cursor-default">Events</p>
                 </div>
                 <hr class="ml-[4%] w-[92%] self-center border-gray-discordlight border-t-2">
-                <!-- channels -->
-                <div>
-                    <!-- text channels -->
-                    <div>
-
-                    </div>
-                    <!-- voice channels -->
-                    <div>
-
-                    </div>
-                </div>
             </div>
             <!-- channels -->
-            <div>
+            <div class="flex flex-col">
                 <!-- text channels -->
-                <div class="flex justify-between h-4 mx-2 mt-3 font-mono cursor-default text-gray-400">
-                    <div class="hover:text-gray-200 transition-all duration-150">
-                        <i class="fa-solid fa-angle-down text-[10px]"></i>
-                        <span class="text-xs my-auto">TEXT CHANNELS</span>
+                <div class="flex flex-col" x-data="{ open: false }" style="user-select: none;">
+                    <div class="flex justify-between h-4 mx-3 mt-3 font-mono cursor-default text-gray-400">
+                        <div class="hover:text-gray-200 transition-all duration-150" @click="open = !open">
+                            <i class="fa-solid fa-angle-down text-[10px]"></i>
+                            <span class="text-xs my-auto">TEXT CHANNELS</span>
+                        </div>
+                        <div class="mr-1">
+                            <i class="fa-solid fa-plus text-[12px]"></i>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-plus text-[12px] mr-3"></i>
+                    <!-- dropdowns -->
+                    <div class="mt-3 flex flex-col max-w-full text-sm">
+                        <div class="flex h-6 mx-4 my-1 font-mono overflow-hidden gap-2 text-gray-400 hover:text-gray-200 transition-all duration-150"
+                            x-show="open">
+                            <i class="fa-regular fa-hashtag my-auto"></i>
+                            <p class="my-auto">say-something..</p>
+                        </div>
+                        <div class="flex h-6 mx-4 my-1 font-mono overflow-hidden gap-2 text-gray-400 hover:text-gray-200 transition-all duration-150"
+                            x-show="open">
+                            <i class="fa-regular fa-hashtag my-auto"></i>
+                            <p class="my-auto">meow</p>
+                        </div>
                     </div>
                 </div>
                 <!-- voice channels -->
-                <div class="flex justify-between h-4 mx-2 mt-3 font-mono cursor-default text-gray-400">
-                    <div class="hover:text-gray-200 transition-all duration-150">
-                        <i class="fa-solid fa-angle-down text-[10px]"></i>
-                        <span class="text-xs my-auto">VOICE CHANNELS</span>
+                <div class="flex flex-col" x-data="{ open: false }" style="user-select: none;">
+                    <div class="flex justify-between h-4 mx-3 mt-3 font-mono cursor-default text-gray-400">
+                        <div class="hover:text-gray-200 transition-all duration-150" @click="open = !open">
+                            <i class="fa-solid fa-angle-down text-[10px]"></i>
+                            <span class="text-xs my-auto">VOICE CHANNELS</span>
+                        </div>
+                        <div class="mr-1">
+                            <i class="fa-solid fa-plus text-[12px]"></i>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-plus text-[12px] mr-3"></i>
+                    <!-- dropdowns -->
+                    <div class="mt-3 flex flex-col max-w-full text-sm">
+                        <div class="flex h-6 mx-4 my-1 font-mono overflow-hidden gap-2 text-gray-400 hover:text-gray-200 transition-all duration-150"
+                            x-show="open">
+                            <i class="fa-regular fa-hashtag my-auto"></i>
+                            <p class="my-auto">lobby</p>
+                        </div>
+                        <div class="flex h-6 mx-4 my-1 font-mono overflow-hidden gap-2 text-gray-400 hover:text-gray-200 transition-all duration-150"
+                            x-show="open">
+                            <i class="fa-regular fa-hashtag my-auto"></i>
+                            <p class="my-auto">hellooooooo</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,7 +136,7 @@
             </div>
             <!-- chats -->
             <div class="flex flex-col grow pr-8 overflow-y-auto" id="custom-scroll">
-                <!-- css bug fix: scrollbar won't work with justify-end hence this tomfoolery of an element -->
+                <!-- css bug workaround: scrollbar won't work with justify-end hence this tomfoolery of an element -->
                 <div class="mt-auto"></div>
                 <!-- one single chat -->
                 <div class="flex font-mono my-3">
@@ -251,7 +269,7 @@
                             <span class="text-[10px] text-gray-400"> 8:00 AM Sunday Morning </span>
                         </div>
                         <div class="text-xs">
-                            Here kitty you can has cheezeburger
+                            <a href="https://youtu.be/1SB5lMyPmuk?si=wQSo0l2_j_cXxjTJ" class="underline">Here kitty you can has cheezeburger <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -265,7 +283,7 @@
                             <span class="text-[10px] text-gray-400"> 8:00 AM Sunday Morning </span>
                         </div>
                         <div class="text-xs">
-                            Here kitty you can has cheezeburger
+                            <a href="https://youtu.be/B0znSETcj6s?si=mT4rxd0vfHMpneZe" class="underline">Here kitty you can has cheezeburger <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +297,7 @@
                             <span class="text-[10px] text-gray-400"> 8:00 AM Sunday Morning </span>
                         </div>
                         <div class="text-xs">
-                            Here kitty you can has cheezeburger
+                            <a href="https://youtu.be/oSlx6k_KTCE?si=pq18KVmbnd2YkRiY" class="underline">Here kitty you can has cheezeburger <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -293,7 +311,7 @@
                             <span class="text-[10px] text-gray-400"> 8:00 AM Sunday Morning </span>
                         </div>
                         <div class="text-xs">
-                            Here kitty you can has cheezeburger
+                            <a href="https://youtu.be/6D4PAKuLE1A?si=vDn78cZ1UeHtJuSh" class="underline">Here kitty you can has cheezeburger <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -301,7 +319,8 @@
             <!-- text bar -->
             <div class="relative top-0 bottom-0 mx-4 mb-4 shrink-0 h-9">
                 <input type="text"
-                    class="outline-none bg-gray-discordlighter w-full h-full rounded-lg pl-10 pr-28 text-sm font-mono">
+                    class="outline-none bg-gray-discordlighter w-full h-full rounded-lg pl-10 pr-28 text-sm font-mono"
+                    placeholder="Message #channel-name">
                 <!-- left plus icon -->
                 <div class="absolute top-1 left-3 text-gray-400 text-xl">
                     <i class="fa-solid fa-circle-plus"></i>

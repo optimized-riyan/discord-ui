@@ -669,8 +669,8 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
+.bottom-0 {
+  bottom: 0px;
 }
 
 .left-3 {
@@ -685,20 +685,16 @@ video {
   right: 0.75rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-1 {
   top: 0.25rem;
 }
 
 .top-2 {
   top: 0.5rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.bottom-0 {
-  bottom: 0px;
 }
 
 .z-10 {
@@ -718,6 +714,11 @@ video {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .my-2 {
@@ -747,8 +748,16 @@ video {
   margin-left: 4%;
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-\[11px\] {
@@ -763,14 +772,6 @@ video {
   margin-top: auto;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -781,6 +782,14 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .h-8 {
@@ -799,36 +808,20 @@ video {
   height: 100vh;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
-.max-h-full {
-  max-height: 100%;
+.h-6 {
+  height: 1.5rem;
 }
 
 .max-h-screen {
   max-height: 100vh;
 }
 
-.max-h-96 {
-  max-height: 24rem;
+.w-12 {
+  width: 3rem;
 }
 
-.max-h-none {
-  max-height: none;
-}
-
-.max-h-24 {
-  max-height: 6rem;
-}
-
-.max-h-48 {
-  max-height: 12rem;
-}
-
-.w-14 {
-  width: 3.5rem;
+.w-16 {
+  width: 4rem;
 }
 
 .w-40 {
@@ -851,14 +844,6 @@ video {
   width: 100%;
 }
 
-.w-lvw {
-  width: 100lvw;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
 .min-w-24 {
   min-width: 6rem;
 }
@@ -867,16 +852,12 @@ video {
   min-width: 14rem;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.max-w-full {
+  max-width: 100%;
 }
 
 .shrink-0 {
   flex-shrink: 0;
-}
-
-.flex-grow {
-  flex-grow: 1;
 }
 
 .grow {
@@ -904,18 +885,6 @@ video {
   flex-direction: column;
 }
 
-.flex-col-reverse {
-  flex-direction: column-reverse;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-nowrap {
-  flex-wrap: nowrap;
-}
-
 .items-center {
   align-items: center;
 }
@@ -940,32 +909,12 @@ video {
   align-self: center;
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
 
-.overflow-visible {
-  overflow: visible;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.overflow-y-scroll {
-  overflow-y: scroll;
-}
-
-.scroll-auto {
-  scroll-behavior: auto;
 }
 
 .rounded-3xl {
@@ -1022,11 +971,6 @@ video {
   background-size: cover;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1037,40 +981,20 @@ video {
   padding-bottom: 2px;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
-.pl-12 {
-  padding-left: 3rem;
-}
-
-.pr-36 {
-  padding-right: 9rem;
-}
-
 .pl-10 {
   padding-left: 2.5rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pr-28 {
   padding-right: 7rem;
 }
 
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
 .pr-8 {
   padding-right: 2rem;
-}
-
-.pr-0 {
-  padding-right: 0px;
 }
 
 .text-center {
@@ -1079,11 +1003,6 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-\[10px\] {
@@ -1108,14 +1027,14 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-semibold {
@@ -1132,24 +1051,8 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-gray-discordlight {
-  --tw-text-opacity: 1;
-  color: rgb(54 57 62 / var(--tw-text-opacity));
-}
-
-.text-gray-discordlighter {
-  --tw-text-opacity: 1;
-  color: rgb(66 69 73 / var(--tw-text-opacity));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+.underline {
+  text-decoration-line: underline;
 }
 
 .outline-none {
@@ -1167,16 +1070,12 @@ video {
   transition-duration: 100ms;
 }
 
-.duration-200 {
-  transition-duration: 200ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 .duration-150 {
   transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .hover\:bg-gray-discordlighter:hover {
